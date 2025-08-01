@@ -6,6 +6,8 @@
     <title>Agentic AI Course Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.3/dist/purify.min.js"></script>
     <style>
         .module-card:hover .module-icon {
             transform: scale(1.1);
@@ -210,7 +212,7 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <!-- Module 1 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=1'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module1_introduction_to_agentic_ai/lessons/01_what_is_agentic_ai.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center module-icon">
@@ -233,7 +235,7 @@
                         </div>
 
                         <!-- Module 2 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=2'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module2_building_your_first_ai_agent/lessons/01_setting_up_the_environment.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center module-icon">
@@ -264,7 +266,7 @@
                         </div>
 
                         <!-- Module 3 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=3'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module3_advanced_agent_architectures/lessons/01_multi_agent_systems.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center module-icon">
@@ -287,7 +289,7 @@
                         </div>
 
                         <!-- Module 4 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=4'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module4_agentic_ai_in_the_real_world/lessons/01_case_studies.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center module-icon">
@@ -310,7 +312,7 @@
                         </div>
 
                         <!-- Module 5 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=5'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module5_agentic_ai_in_smart_mobility/lessons/01_role_of_agentic_ai.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center module-icon">
@@ -333,7 +335,7 @@
                         </div>
 
                         <!-- Module 6 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=6'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module6_agentic_ai_in_ugv/lessons/01_introduction_to_ugv.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-yellow-100 flex items-center justify-center module-icon">
@@ -356,7 +358,7 @@
                         </div>
 
                         <!-- Module 7 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=7'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module7_agentic_ai_in_uav/lessons/01_introduction_to_uav.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-cyan-100 flex items-center justify-center module-icon">
@@ -379,7 +381,7 @@
                         </div>
 
                         <!-- Module 8 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=8'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module8_gemma_3n_hackathon/lessons/01_understanding_the_hackathon.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center module-icon">
@@ -402,7 +404,7 @@
                         </div>
 
                         <!-- Module 9 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=9'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module9_human_ai_interaction/lessons/01_on_device_ai.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center module-icon">
@@ -425,7 +427,7 @@
                         </div>
 
                         <!-- Module 10 -->
-                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='agentic-ai-course-web/index.html?module=10'">
+                        <div class="module-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition" onclick="window.location.href='module10_samsung_ennovatex/lessons/01_understanding_the_challenge.md'">
                             <div class="p-5">
                                 <div class="flex items-start justify-between mb-4">
                                     <div class="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center module-icon">
@@ -539,6 +541,64 @@
 
         sidebarToggle.addEventListener('click', () => {
             sidebar.classList.remove('active');
+        });
+
+        // Markdown preview function
+        async function previewMarkdown(modulePath) {
+            try {
+                // Get just the module number from the path
+                const moduleNum = modulePath.split('_')[0].replace('module', '');
+                const content = `
+                    <h1>Module ${moduleNum} Preview</h1>
+                    <p>This would show the content for Module ${moduleNum}</p>
+                    <p>To view the actual markdown files:</p>
+                    <ol>
+                        <li>Run a local web server (e.g. <code>python3 -m http.server</code>)</li>
+                        <li>Access this page through http://localhost:8000</li>
+                        <li>The markdown files will then load properly</li>
+                    </ol>
+                `;
+                
+                // Create preview modal
+                const modal = document.createElement('div');
+                modal.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4';
+                modal.innerHTML = `
+                    <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto">
+                        <div class="p-6 markdown-content">${content}</div>
+                        <div class="p-4 border-t flex justify-end">
+                            <button onclick="this.closest('div[class*=\"bg-opacity-50\"]').remove()" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+                
+                // Add basic markdown styling
+                const style = document.createElement('style');
+                style.textContent = `
+                    .markdown-content h1 { font-size: 1.5rem; font-weight: bold; margin: 1rem 0; }
+                    .markdown-content h2 { font-size: 1.25rem; font-weight: bold; margin: 0.75rem 0; }
+                    .markdown-content p { margin: 0.5rem 0; }
+                    .markdown-content ul { list-style-type: disc; padding-left: 1.5rem; }
+                    .markdown-content pre { background: #f5f5f5; padding: 1rem; border-radius: 0.25rem; overflow-x: auto; }
+                    .markdown-content code { font-family: monospace; }
+                `;
+                document.head.appendChild(style);
+            } catch (error) {
+                console.error('Error loading markdown:', error);
+                alert('Could not load the markdown file');
+            }
+        }
+
+        // Update module card click handlers
+        document.querySelectorAll('.module-card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (!e.target.closest('button')) {
+                    const url = this.getAttribute('onclick').match(/window\.location\.href='([^']+)'/)[1];
+                    previewMarkdown(url);
+                }
+            });
         });
 
         // Simulate progress for demo purposes
