@@ -1,0 +1,29 @@
+# Requirements for the "Echo" AI Companion Project
+# Note: The provided simulation script (echo_real_template.py) runs without these dependencies.
+# This file lists the libraries a developer would need to build the full, functional application.
+
+# --- Core AI/ML Libraries ---
+
+# For running efficient, on-device deep learning models for vision and audio.
+# tensorflow-lite-runtime
+
+# For image and video processing, to prepare frames for the vision model.
+# opencv-python-headless
+
+# --- LLM / Generative AI ---
+
+# The specific client library for the on-device LLM would go here.
+# For example, if using a framework like Ollama to serve a Gemma model locally:
+# ollama
+
+# --- Memory & Data ---
+
+# For creating and managing the on-device vector database (MemoryStream).
+# A library like FAISS or a Python-based vector search library would be needed.
+# faiss-cpu
+# sentence-transformers # To generate embeddings for the vector search
+
+# --- Utility ---
+
+# Used for general numerical operations, especially with image data.
+# numpy
