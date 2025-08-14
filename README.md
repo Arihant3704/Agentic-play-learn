@@ -2,6 +2,8 @@
 
 Welcome to the Agentic AI Course! This course is designed to provide a comprehensive introduction to the world of agentic artificial intelligence, tailored for both students and developers.
 
+https://arihant3704.github.io/Agentic-play-learn/
+
 ## Course Overview
 
 This course will cover the fundamental concepts of Agentic AI, from the basic building blocks to advanced topics. We will explore the architecture of AI agents, their applications, and the tools and frameworks used to build them.
